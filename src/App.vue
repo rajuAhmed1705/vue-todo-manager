@@ -1,27 +1,30 @@
 <template>
   <div id="app">
-    <task/>
+    <el-row>
+      <el-col :span="16" :offset="4"
+        ><div class="grid-content bg-purple"><task-manager /></div
+      ></el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-import Task from './components/Task.vue'
-
+import TaskManager from "./components/TaskManager.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Task
-  }
-}
+    TaskManager,
+  },
+};
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
